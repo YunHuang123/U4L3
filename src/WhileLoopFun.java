@@ -73,10 +73,24 @@ public class WhileLoopFun
      */
     public boolean isPrime(int number)
     {
-        if (number % 2 == 1){
+        int num = 1;
+        int count = 0;
+        while (num <= number)
+        {
+            if (number % num == 0)
+            {
+                count ++;
+            }
+            num ++;
+        }
+        if (count > 2 || count == 1)
+        {
             return false;
         }
-        else if ()
+        else
+        {
+            return true;
+        }
     }
 
     /**Returns the maximum number of times that number can be doubled (multiplied by 2) before it exceeds
