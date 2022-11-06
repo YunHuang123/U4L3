@@ -117,7 +117,15 @@ public class WhileLoopFun
 
      Precondition: number > 0, threshold > 0
      */
-    /*public int maxDoubles(int number, int threshold)
+    public int maxDoubles(int number, int threshold)
     {
-    }*/
+        int num = number;
+        int count = 0;
+        while (num <= threshold) {
+            num = num * 2;
+            count ++;
+        }
+        count --;
+        return count;
+    }
 }
